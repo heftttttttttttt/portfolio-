@@ -131,11 +131,7 @@ def main():
         app.add_handler(CommandHandler("info", info_command))
         app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
 
-        print("=" * 50)
         print("Bot is running and ready!")
-        print("Model: Qwen 3.7 Flash (via openrouter/free)")
-        print("Ghostface Horror Movie Bot - with FLIRTING via AI!")
-        print("=" * 50)
         
         app.run_polling(
             poll_interval=0.5,
