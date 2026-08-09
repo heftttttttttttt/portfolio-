@@ -11,7 +11,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     welcome_text = (
         f"Hello, {user_name}, what's your fav scary movie?\n"
         "P.S. use /help for get info, sweetheart.\n"
-        "P.P.S. I don't just kill... I flirt too."
     )
     await update.message.reply_text(welcome_text)
 
@@ -31,7 +30,7 @@ async def info_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "Language: English\n"
         "Pricing: Free\n"
         "Horror Movie Bot - Ghostface\n"
-        "Specialty: Murder... and flirting."
+        "Specialty: Murder"
     )
     await update.message.reply_text(info_text)
 
